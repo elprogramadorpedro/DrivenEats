@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>DrivenEact</title>
 </head>
 
 <body>
@@ -27,103 +27,150 @@
             <p class="title-driven">DrivenEats</p>
             <p class="subtitle-driven">Sua comida em 6 minutos</p>
         </header>
-        <div class="text">
-            <p class="text1">Primeiro, seu prato</p>
+
+        <div class="fooda">
+
+            <div class="text">
+                <p class="text1">Primeiro, seu prato</p>
+            </div>
+
+            <div class="box-center">
+
+                <div class="box-eats foodone" onclick="selectionfood('.foodone')">
+                    <div class="order">
+                        <img src="img/frango_yin_yang 1.png" alt="">
+                    </div>
+                    <div class="title-order">Frango Yin Yang</div>
+                    <div class="description">Um pouco de batata, um pouco de salada</div>
+                    <div>
+                        <div class="price-icon">
+                            <h3 class="price"> R$ 14,90 </h3>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-eats foodtwo" onclick="selectionfood('.foodtwo')">
+                    <div class="order">
+                        <img src="img/frango_yin_yang 1.png" alt="">
+                    </div>
+                    <div class="title-order">Frango Yin Yang</div>
+                    <div class="description">Um pouco de batata, um pouco de salada</div>
+
+                    <div class="price-icon">
+                        <h3 class="price"> R$ 14,90 </h3>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+
+                </div>
+                <div class="box-eats foodthree" onclick="selectionfood('.foodthree')">
+                    <div class="order">
+                        <img src="img/frango_yin_yang 1.png" alt="">
+                    </div>
+                    <div class="title-order">Frango Yin Yang</div>
+                    <div class="description">Um pouco de batata, um pouco de salada</div>
+                    <div class="price-icon">
+                        <h3 class="price"> R$ 14,90 </h3>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-        <div class="box-center">
 
-            <div class="box-eats">
-                <div class="order">
-                    <img src="img/frango_yin_yang 1.png" alt="">
-                </div>
-                <div class="title-order">Frango Yin Yang</div>
-                <div class="description">Um pouco de batata, um pouco de salada</div>
-                <div class="price"> R$ 14,90</div>
+        <div class="drinking">
+            <div class="text">
+                <p class="text1">Agora, sua bebida</p>
             </div>
-             <div class="box-eats">
-                <div class="order">
-                    <img src="img/frango_yin_yang 1.png" alt="">
+            <div class="box-center">
+
+                <div class="box-eats drinkone" onclick="selectiondrink('.drinkone')">
+                    <div class="order">
+                        <img src="img/coquinha_gelada 1.png" alt="">
+                    </div>
+                    <div class="title-order ">Coquinha gelada</div>
+                    <div class="description">Lata 350ml</div>
+
+                    <div class="price-icon">
+                        <h3 class="price"> R$ 4,90 </h3>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+
                 </div>
-                <div class="title-order">Frango Yin Yang</div>
-                <div class="description">Um pouco de batata, um pouco de salada</div>
-                <div class="price"> R$ 14,90</div>
+
+                <div class="box-eats drinktwo" onclick="selectiondrink('.drinktwo')">
+                    <div class="order">
+                        <img src="img/coquinha_gelada 1.png" alt="">
+                    </div>
+                    <div class="title-order">Coquinha gelada</div>
+                    <div class="description">Lata 350ml</div>
+                    <div class="price-icon">
+                        <h3 class="price"> R$ 4,90 </h3>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="box-eats drinkthree" onclick="selectiondrink('.drinkthree')">
+                    <div class="order">
+                        <img src="img/coquinha_gelada 1.png" alt="">
+                    </div>
+                    <div class="title-order">Coquinha gelada</div>
+                    <div class="description">Lata 350ml</div>
+                    <div class="price-icon">
+                        <h3 class="price"> R$ 4,90 </h3>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+
+                </div>
             </div>
-            <div class="box-eats">
-                <div class="order">
-                    <img src="img/frango_yin_yang 1.png" alt="">
-                </div>
-                <div class="title-order">Frango Yin Yang</div>
-                <div class="description">Um pouco de batata, um pouco de salada</div>
-                <div class="price"> R$ 14,90</div>
-            </div> 
         </div>
-    
-        <div class="text">
-            <p class="text1">Agora, sua bebida</p>
+
+        <div class="sweet">
+
+            <div class="text">
+                <p class="text1">Por fim, sua sobremesa</p>
+            </div>
+            <div class="box-center">
+
+                <div class="box-eats sweetone" onclick="selectionsweet('.sweetone')">
+                    <div class="order">
+                        <img src="img/pudim 1.png" alt="">
+                    </div>
+                    <div class="title-order">Pudim</div>
+                    <div class="description">Apenas pudim</div>
+                    <div class="price-icon">
+                        <h3 class="price"> R$ 7,90 </h3>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+
+                </div>
+
+                <div class="box-eats sweettwo" onclick="selectionsweet('.sweettwo')">
+                    <div class="order">
+                        <img src="img/pudim 1.png" alt="">
+                    </div>
+                    <div class="title-order">Pudim</div>
+                    <div class="description">Apenas pudim</div>
+                    <div class="price-icon">
+                        <h3 class="price"> R$ 7,90 </h3>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="box-eats sweetthree" onclick="selectionsweet('.sweetthree')">
+                    <div class="order">
+                        <img src="img/pudim 1.png" alt="">
+                    </div>
+                    <div class="title-order">Pudim</div>
+                    <div class="description">Apenas pudim</div>
+                    <div class="price-icon">
+                        <h3 class="price"> R$ 7,90 </h3>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="box-center">
-
-            <div class="box-eats">
-                <div class="order">
-                    <img src="img/coquinha_gelada 1.png" alt="">
-                </div>
-                <div class="title-order">Coquinha gelada</div>
-                <div class="description">Lata 350ml</div>
-                <div class="price"> R$ 14,90</div>
-            </div>
-
-            <div class="box-eats">
-                <div class="order">
-                    <img src="img/coquinha_gelada 1.png" alt="">
-                </div>
-                <div class="title-order">Coquinha gelada</div>
-                <div class="description">Lata 350ml</div>
-                <div class="price"> R$ 14,90</div>
-            </div>
-
-            <div class="box-eats">
-                <div class="order">
-                    <img src="img/coquinha_gelada 1.png" alt="">
-                </div>
-                <div class="title-order">Coquinha gelada</div>
-                <div class="description">Lata 350ml</div>
-                <div class="price"> R$ 14,90</div>
-            </div>
-        </div> 
-
-        <div class="text">
-            <p class="text1">Por fim, sua sobremesa</p>
-        </div>
-        <div class="box-center">
-
-            <div class="box-eats">
-                <div class="order">
-                    <img src="img/pudim 1.png" alt="">
-                </div>
-                <div class="title-order">Pudim</div>
-                <div class="description">Apenas pudim</div>
-                <div class="price"> R$ 7,90</div>
-            </div>
-
-            <div class="box-eats">
-                <div class="order">
-                    <img src="img/pudim 1.png" alt="">
-                </div>
-                <div class="title-order">Pudim</div>
-                <div class="description">Apenas pudim</div>
-                <div class="price"> R$ 7,90</div>
-            </div>
-
-            <div class="box-eats">
-                <div class="order">
-                    <img src="img/pudim 1.png" alt="">
-                </div>
-                <div class="title-order">Pudim</div>
-                <div class="description">Apenas pudim</div>
-                <div class="price"> R$ 7,90</div>
-            </div>
-        </div> 
-
         <div class="footer">
             <div class="button">
 
@@ -134,8 +181,44 @@
                 </div>
 
             </div>
+            <!-- 
+Confirme seu pedido -->
+            <div class="changebody order-hidden">
+                <div class="confirm order-hidden">
+                    <div class="order-pay">
+                        <div class="text-confirm">
+                            <p>confirme seu pedido</p>
+                        </div>
+                        <div class="text-product-price">
+                            <p>Frango Yin Yang</p>
+                            <p>14,90</p>
+                        </div>
+                        <div class="text-product-price">
 
-            <script src="index.js"></script>
+                            <p>Coquinha gelada</p>
+                            <p>4,90</p>
+                        </div>
+                        <div class="text-product-price">
+                            <p>Pudim</p>
+                            <p>7,90</p>
+                        </div>
+                        <div class="text-product-total">
+                            <p>TOTAL</p>
+                            <p>R$ 27,70</p>
+                        </div>
+                        <button class="button" onclick="fazerPedido()">
+                            Tudo certo, pode pedir!
+                        </button>
+                        <button class="cancelar">
+                            <p>Cancelar</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,7 @@ body {
 .sub-body {
   margin: 0 auto;
   width: 414px;
+  height: 1150px;
   background-color: #eeeeee;
 }
 
@@ -67,7 +68,7 @@ header p {
   flex-wrap: wrap;
   flex-direction: column;
   overflow: scroll;
-  overflow-y:hidden ;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
@@ -75,6 +76,7 @@ header p {
   height: 216px;
   margin-left: 19px;
 }
+
 .box-eats:first-child {
   margin-left: 19px;
 }
@@ -84,7 +86,7 @@ header p {
   height: 216px;
 
   scroll-snap-align: start;
-  pointer-events: none;
+  /* pointer-events: none; nunca mais coloque essa propriedade */
 
   background: #ffffff;
   box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
@@ -113,7 +115,7 @@ header p {
 
 .description {
   width: 147px;
-  height: 39px;
+
   margin-top: 4px;
   font-family: Roboto;
   font-style: normal;
@@ -121,6 +123,20 @@ header p {
   font-size: 15px;
   line-height: 18px;
   margin-left: 15px;
+}
+
+.fooda {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.border {
+  border: 4px solid #32b72f;
+}
+
+.border ion-icon {
+  display: block;
 }
 
 .price {
@@ -134,30 +150,45 @@ header p {
   margin-top: 5px;
 }
 
+.price-icon {
+  width: 147px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ion-icon {
+  font-size: 22px;
+  color: #32b72f;
+  display: none;
+}
+
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 414px;
   height: 92px;
   margin-top: 16px;
   background-color: #ffffff;
   border: 1px solid white;
+  bottom: 0px;
+  position: fixed;
 }
 
 .button {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 15px;
-  margin-left: 25px;
   width: 364px;
   height: 61px;
-  left: 25px;
-  bottom: 16px;
-
   background: #cbcbcb;
   border-radius: 50px;
-  margin-bottom: 8px;
 }
 
 .box-text {
+  width: 190px;
+  height: 46px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -166,18 +197,111 @@ header p {
   text-align: center;
   letter-spacing: 0.018em;
   color: white;
-  width: 190px;
-  height: 53px;
-  margin-left: 87px;
 }
 
 @media (max-width: 736px) {
   .sub-body {
     justify-content: center;
   }
-  
-  .box-center{
-      overflow: auto;
-  }
 
+  .box-center {
+    overflow: auto;
+  }
+}
+
+.order-pay {
+  display: flex;
+  flex-direction: column;
+  width: 377px;
+  height: 353px;
+  background-color: #50d074;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+}
+
+.text-confirm {
+  margin-top: 21px;
+  border: 1px solid red;
+  width: 376px;
+  height: 27px;
+
+  margin-bottom: 28px;
+}
+
+.text-confirm p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.text-product-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  margin-left: 26px;
+  margin-right: 25px;
+
+  border: 1px solid red;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.018em;
+  color: #ffffff;
+}
+
+.text-product-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  margin-left: 26px;
+  margin-right: 25px;
+
+  border: 1px solid red;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.018em;
+
+  color: #ffffff;
+}
+
+.cancelar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 333px;
+  height: 52px;
+  margin-left: 26px;
+  margin-right: 25px;
+  border: 1px solid red;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+
+  letter-spacing: 0.018em;
+
+  color: #ffffff;
+  background-color: #50d074;
+}
+
+.escondido {
+  display: none;
+}
+
+.order-hidden {
+  display: none;
 }
