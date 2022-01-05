@@ -199,7 +199,7 @@ ion-icon {
   color: white;
 }
 
-.close{
+.close {
   background-color: #32b72f;
   text-decoration: inherit;
 }
@@ -288,7 +288,7 @@ ion-icon {
   height: 52px;
   margin-left: 26px;
   margin-right: 25px;
-  border: 1px solid red;
+  border: none;
 
   font-family: Roboto;
   font-style: normal;
@@ -307,14 +307,13 @@ ion-icon {
   display: none;
 }
 
-
-.opacity{
+.opacity {
   position: fixed;
   width: 100%;
   top: 0;
   bottom: 0;
   background-color: white;
-  opacity: 0.80;
+  opacity: 0.8;
   z-index: 3;
 }
 
@@ -322,17 +321,139 @@ ion-icon {
   display: none;
 }
 
-
-.confirm{
+.confirm {
   width: 377px;
   height: auto;
   min-height: 380px;
   z-index: 5;
   background-color: #50d074;
-  top: calc((100% - 377px)/2);
-  left: calc((100% - 377px)/2);
+  top: calc((100% - 377px) / 2);
+  left: calc((100% - 377px) / 2);
   position: fixed;
   border-radius: 9px;
   opacity: 1;
 }
 
+/* 
+window */
+
+.titleconfirm {
+  margin-top: 30px;
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.confirm-order {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+  line-height: 26px;
+  letter-spacing: 0.018em;
+
+  color: #ffffff;
+}
+
+.confirm-drinking {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.018em;
+
+  color: #ffffff;
+  align-items: center;
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.confirm-sweet {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.018em;
+
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.total-pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.018em;
+
+  color: #ffffff;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.button-confirmation {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 22px auto;
+  width: 333px;
+  height: 55px;
+  border-radius: 50px;
+  border: none;
+}
+
+.button-confirmation p {
+  color: #50d074;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.018em;
+
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.cancel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
